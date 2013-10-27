@@ -1,0 +1,133 @@
+* {
+    font-family: 'Microsoft YaHei','Helvetica Neue', Helvetica, Arial, Verdana,  "Hiragino Sans GB", STHeiti, sans-serif;;
+}
+
+body {
+    background-image: url('../img/body-background.jpg');
+    background-attachment: fixed;
+}
+
+h1, h2 {
+    text-align:center;
+    font-family: 'Meddon', 'lucida handwriting', sans-serif;
+    font-weight: lighter;
+    font-size: 96px;
+    color: #888;
+}
+
+h2 {
+    font-family: 'Meddon', 'Microsoft YaHei', sans-serif;
+}
+
+/* 最外层容器样式 */
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    background-image: url('../img/wrapper-background.png');
+    background-repeat: repeat;
+}
+
+
+
+/* 头部header的样式 */
+#header h1 {
+    color:#666;
+
+    /* todo */
+}
+
+#header nav ul {
+    border-bottom: dotted 1px #ddd;
+}
+
+#header nav ul li a {
+    text-decoration: none;
+    /* todo */
+}
+
+
+
+/* 相册样式 */
+#gallery {
+    background-color: #fff;
+    /* todo */
+}
+
+.gallery-heading h2 {
+    font-weight: lighter;
+    font-size: 28px;
+    color: #61AABC;
+}
+
+.gallery-heading .gallery-icon {
+    text-align: center;
+}
+
+.gallery-heading .gallery-icon img {
+    height:60px;
+    width: 60px;
+    /* done */
+}
+
+.gallery-heading p.time {
+    text-align: center;
+    font-weight: lighter;
+    font-size:15px;
+    color:#656565;
+    /* todo */
+}
+
+
+/*评论输入框*/
+#comment {
+    border-bottom: 1px solid #bbb;
+}
+
+.comment-textarea img {
+    border-radius: 3px;
+}
+
+.comment-textarea textarea.comment {
+    height: 54px;
+    width: 708px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+    border: 1px solid #bbb;
+    border-radius:3px;
+    /* todo */
+}
+
+button.comment-submit {
+    background-color: #e6e6e6;
+    border:1px solid #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    /* todo */
+}
+
+
+
+/*评论列表*/
+.comments-count {
+    color: #777;
+    font-size: 13px;
+}
+
+span#number {
+    color:#d32;
+}
+/* 这个地方不知道对不对 */
+
+.comment-item {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment-item p {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5em;
+}
