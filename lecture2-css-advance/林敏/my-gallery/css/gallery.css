@@ -1,0 +1,181 @@
+﻿** {
+    font-family: 'Microsoft YaHei','Helvetica Neue', Helvetica, Arial, Verdana,  "Hiragino Sans GB", STHeiti, sans-serif;;
+}
+
+body {
+    background-image: url('../img/body-background.jpg');
+     background-repeat: repeat;
+    background-attachment:fixed;
+}
+
+h1, h2 {
+    text-align:center;
+}
+
+/* 最外层容器样式 */
+#wrapper {
+    margin: 0 auto;
+    width: 800px;
+    background-image: url('../img/wrapper-background.png');
+    background-repeat: repeat;
+    height:1500px;
+}
+
+
+
+
+/* 头部header的样式 */
+#header h1 {
+   font-family: 'Meddon', sans-serif;;
+   font-weight:lighter;
+   font-size: 80px;
+   color:#888;
+}
+
+#header nav ul {
+   
+ 
+   list-style-type:none;
+   left:30px;
+   bottom:50px;
+   text-align:center;
+   position: relative;
+   left: 240px;
+   top:20px;
+}
+
+#header nav ul li a {
+   color: #666;
+   text-decoration: none;
+   float:left;
+   width:80px;
+   height:28px;
+   line-height:40px;
+   
+}
+
+
+
+/* 相册样式 */
+#gallery {
+    background-color:#fff;
+	position:relative;
+    top:100px;
+    height:450px;
+    margin:80px;
+    padding:60px;
+    box-shadow:3px 3px 20px #292929 ;
+}
+
+.gallery-heading h2 {
+    font-weight: lighter;
+    font-size: 28px;
+    color: #61AABC;
+}
+
+.gallery-heading .gallery-icon {
+    text-align: center;
+}
+
+.gallery-heading .gallery-icon img {
+    position:relative;
+	bottom:90px;
+    height:60px;
+    width:60px;
+}
+.gallery-slide1 img{
+position: absolute;
+Z-index:10;
+height:45%;
+left:130px;
+border-style:outset;
+border-color:#ff;
+}
+
+.gallery-slide2 img{
+position: absolute;
+Z-index:20;
+left:130px;
+height:45%;
+border-style:outset;
+border-color:#fff;
+}
+
+.gallery-slide3 img{
+position: absolute;
+Z-index:0;
+left:130px;
+height:45%;
+border-style:outset;
+border-color:#fff;
+}
+
+.gallery-heading p.time {
+    
+    font-weight: lighter;
+    font-size: 15px;
+    color:#656565;
+    text-align: center;
+}
+
+
+/*评论输入框*/
+#comment {
+    border-bottom: 1px solid #bbb;
+	position:relative;
+	top:80px;
+}
+
+.comment-textarea img {
+    border-radius: 3px;
+}
+
+.comment-textarea textarea.comment {
+    height: 54px;
+    width: 708px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+    border: 1px solid #bbb;
+     border-width: 3px;
+}
+
+button.comment-submit {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    background-color:#e6e6e6;
+    border-style:solid;
+    border-width:1px;
+    border-color:#ccc;
+    cursor: pointer; 
+}
+
+
+
+/*评论列表*/
+#comments-list {
+    position:relative;
+    top:150px;
+}
+.comments-count {
+    font-size: 13px;
+    color: #777;
+}
+
+.counter {
+    color: #d32; 
+}
+
+
+.comment-item {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment-item p {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5em;
+}
+
