@@ -1,0 +1,200 @@
+* {
+    font-family: 'Microsoft YaHei','Helvetica Neue', Helvetica, Arial, Verdana,  "Hiragino Sans GB", STHeiti, sans-serif;;
+}
+
+body {
+    background-image: url('../img/body-background.jpg');
+    background-attachment:fixed;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    text-align: center
+}
+
+/* 最外层容器样式 */
+#wrapper {
+    width: 800px;
+    height: auto;
+    background-image: url('../img/wrapper-background.png');
+    background-repeat: repeat;
+    margin:30px auto;width:1000px;
+
+}
+
+
+
+/* 头部header的样式 */
+#header h1 {
+    font-family:'Meddon', 'Microsoft YaHei', sans-serif;
+    font-weight:lighter;
+    font-size:86px;
+    color:#888;
+}
+
+#header nav{
+    margin-top;
+}
+
+#header nav ul {
+    border-bottom: dotted 1px #ddd;
+    list-style-type:none;
+    margin:0px 300px 60px 380px;
+    padding:20px;
+}
+
+#header nav ul li {
+    display: inline;
+    float:left;
+}
+
+#header nav ul li a {
+    color: #666;
+    text-decoration: none;
+    display:block;
+    width:80px;
+}
+
+
+
+
+/* 相册样式 */
+#gallery {
+    background-color:#fff;
+    width: 800px;
+    margin: auto;
+    height:730px;
+    border-style: none solid solid solid;
+    border-width:thin;
+    border-color: #e6e6e6;
+}
+
+#gallery ul{
+    margin: 0px 40px 0px 10px;
+}
+
+.gallery-heading
+{
+    bottom: 130px;
+}
+
+.gallery-heading h2 {
+    font-weight: lighter;
+    font-size: 28px;
+    color: #61AABC;
+    height: 20px;
+}
+
+.gallery-heading .gallery-icon {
+    text-align: center;
+    position: absolute;
+    top:290px;
+    left:650px;
+}
+
+.gallery-heading .gallery-icon img {
+    width:60px;
+    height:60px;
+}
+
+.gallery-heading p.time {
+    text-align:center;
+    font-weight:lighter;
+    font-size:15px;
+    color:#656565;
+}
+
+.gallery-slides{
+    text-align:center;
+    list-style-type:none;
+}
+
+.gallery-slide1{
+    height:800px;
+}
+
+.gallery-slide2{
+    position:absolute;
+    left: 360px;
+    top: 420px;
+}
+
+.gallery-slide3{
+    position:absolute;
+    left: 360px;
+    top: 420px;
+}
+
+/*评论输入框*/
+#comment {
+}
+
+.comment-textarea:{
+
+}
+
+.comment-textarea img {
+    border-radius: 3px;
+    text-align:center;
+    margin: 50px 20px 5px 100px;
+}
+
+.comment-textarea textarea.comment {
+    height: 54px;
+    width: 708px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+    border: 1px solid #bbb;
+    border-radius:3px;
+    margin: 50px 0px 5px 0px;
+}
+
+
+button.comment-submit {
+    height:30px;
+    width:80px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    background-color:#e6e6e6;
+    border:1px solid #ccc;
+    cursor: pointer;
+    margin: 0px 100px 10px 800px;
+}
+
+
+
+/*评论列表*/
+#comment-list{
+height: 500px;
+}
+
+
+.comments-count {
+    border:0;
+    font-size: 13px;
+    color: #777;
+    margin:0px 100px 0px 100px;
+}
+
+
+.comment-item {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    list-style-type:none;
+    margin:20px 80px 0px 80px;
+}
+
+.comment-item p {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5em;
+    margin:30px 30px 80px 30px;
+}
+

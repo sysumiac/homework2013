@@ -1,0 +1,199 @@
+* {
+    font-family: 'Microsoft YaHei','Helvetica Neue', Helvetica, Arial, Verdana,  "Hiragino Sans GB", STHeiti, sans-serif;;
+}
+
+body {
+    background-image: url('../img/body-background.jpg');
+    background-attachment: fixed;
+    background-repeat: repeat;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* 最外层容器样式 */
+#wrapper {
+    margin: 0 auto;
+    width: 800px;
+    background-image: url('../img/wrapper-background.png');
+    background-repeat: repeat;
+    box-shadow: 5px 0 5px #DCB173, -5px 0 5px #DCB173;
+}
+
+
+
+/* 头部header的样式 */
+#header h1 {
+    font-family: 'Meddon', 'Microsoft YaHei', sans-serif;
+    font-weight: lighter;
+    font-size: 96px;
+    color: #888;
+}
+
+#header nav ul {
+    border-bottom: dotted 1px #ddd;
+
+}
+
+#header nav ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.navigator {
+    width: 43%;
+    margin:auto;
+}
+
+.navigator li {
+    float:left;
+    padding-left: 10%;
+    padding-right:10%;
+    padding-bottom: 20px;
+}
+
+/* 滚动相册样式 */
+#gallery {
+    background-color: #fff;
+    margin: 10% ;
+    padding-bottom: 10%;
+    box-shadow: 5px 5px 5px #ddd, -5px -5px 5px #ddd ;
+}
+
+.gallery-heading h2 {
+    font-weight: lighter;
+    font-size: 28px;
+    color: #61AABC;
+}
+
+.gallery-heading .gallery-icon {
+    text-align: center;
+    height: 40px;
+}
+
+.gallery-heading .gallery-icon img {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: -30px;
+}
+
+.gallery-heading p.time {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #656565;
+}
+
+.gallery-slides {
+    margin: 10px 60px 10px 60px; 
+    position: relative;
+    height: 335px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+.gallery-slide img{
+    width: 98%;
+    height: 98%;
+}
+
+.gallery-slide {
+    width: 100%;
+    position: absolute;/*为什么不是从左边框开始*/
+    top:5px;
+    left: 5px;
+}
+/*评论输入框*/
+#comment {
+    width: 80%;
+    margin: auto;
+}
+
+.comment-textarea img {
+    border-radius: 3px;
+    float: left;
+}
+
+.comment-textarea textarea.comment {
+    height: 54px;
+    width: 89%;
+    margin-left: 10px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    float: right;
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+}
+
+button.comment-submit {
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 5px;
+    width: 10%;
+}
+
+button.comment-submit:hover {
+    cursor: pointer;
+}
+
+
+
+/*评论列表*/
+#comments-list {
+    width: 80%;
+    margin:auto;
+}
+
+.comments-count {
+    font-size: 13px;
+    color: #777;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.counter {
+    color: #d32; 
+}
+
+.comments {
+    padding-left: 0;
+    margin:0;
+}
+
+.comment-item {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px; 
+}
+
+.comment-item p {
+    font-size: 11px;
+    color: #333;
+    line-height: 1.5em;
+    padding: 0 15px 0 15px; 
+}
+
+.clear {
+    clear: both;
+}
+
+.space {
+    height: 50px;
+}
