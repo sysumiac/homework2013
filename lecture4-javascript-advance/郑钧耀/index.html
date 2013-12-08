@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+      <script>
+             function commentclick(){
+             var newcomments=document.getElementById("text").value;
+             document.getElementById("text").value="";
+             var comments=document.getElementById('ul');
+             var li= document.createElement("li");
+             li.innerHTML="<p>"+newcomments+"</p>";
+         
+             comments.appendChild(li);
+             
+            }
+          </script>
+     <meta charset="utf-8"/>
+    <title>Jim`s Blog</title>
+    <meta charset='utf-8'/>
+    <link rel="stylesheet" href="css/meddon-font.css" type="text/css">
+    <link rel="stylesheet" href="css/gallery.css" type="text/css">
+   
+</head>
+
+<body>
+    <div id="wrapper">
+
+                            
+        <!-- 网页头部，包括导航栏和大标题 -->
+        
+         <header id='header'>
+            <h1>Jim`s Blog</h1>
+            <nav>
+                <ul class="navigator">
+                    <li class="nav-item">
+                        <a id="aa" href="#comments-list">
+                            <span class='text'>文章</span>
+                        </a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="#comments-list">
+                            <span class='photo'>相册</span>
+                        </a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="#comments-list">
+                           <span class='about'>关于</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+         </header>
+     <div id="rest"></div>
+         <!-- 相册 -->
+         <div id="gallery">
+
+            <div class="gallery-heading">
+                <div class="gallery-icon">
+                   <img src="img/gallery-icon.png">
+                </div>
+                <h2>MY GALLERY</h2>
+                <p class="time">2013-05-02 05:20:25</p>
+            </div>
+
+            <ul class="gallery-slides">
+                <li class="gallery-slide" id="gallery-slides1"><img src="img/slide-1.jpg" ></li>
+                <li class="gallery-slide2" id="gallery-slides2"><img src="img/slide-2.jpg"></li>
+                <li class="gallery-slide3" id="gallery-slides3"><img src="img/slide-3.jpg"></li>
+            </ul>
+
+         </div>
+
+
+         <!-- 发布评论 -->
+         <div id="comment">
+            <div class='comment-textarea'>
+                <img src="img/avatar-default.png" alt="avatar-default">
+                <textarea id ="text" class="comment" placeholder="说点什么吧~~"></textarea>
+            </div>
+            <button class="comment-submit" onclick="commentclick()">发布</button>
+         </div>
+
+
+         <!--评论列表-->
+         <div id="comments-list">
+            <div class='comments-count'>
+                共 <span>1</span> 条评论
+            </div>
+            <ul id="ul" class='comments'>
+                <li class="comment-item" id="icomment-item">
+                    <p>
+                        关关雎鸠，在河之洲。窈窕淑女，君子好逑。参差荇菜，左右流之。窈窕淑女，寤寐求之。 求之不得，寤寐思服。悠哉悠哉，辗转反侧。参差荇菜，左右采之。窈窕淑女，琴瑟友之。 参差荇菜，左右芼之。窈窕淑女，钟鼓乐之。
+                    </p>
+                    
+                </li>
+            </ul>
+         </div>
+
+     </div> 
+     <SCRIPT TYPE="text/javascript">
+        var myGallerySlide = new Array();
+        var myGallerySlidePoint;
+        var firstIntervalPoint=0;
+        var topPicturePoint=2;
+        var nextPoint;
+        myGallerySlide[0]=document.getElementById("gallery-slides1");
+        myGallerySlide[1]=document.getElementById("gallery-slides2");
+        myGallerySlide[2]=document.getElementById("gallery-slides3");
+        myGallerySlide[0].style.opacity=0;
+        myGallerySlide[1].style.opacity=0;
+        myGallerySlide[2].style.opacity=1;
+        //document.write(myGallerySlide[2].style.zIndex);
+        for(myGallerySlidePoint=0;myGallerySlidePoint<3;myGallerySlidePoint++)
+        {
+          myGallerySlide[myGallerySlidePoint].style.zIndex=myGallerySlidePoint+1;
+          //document.write(myGallerySlide[myGallerySlidePoint].style.zIndex);
+        }
+        //document.write(myGallerySlide[topPicturePoint].style.zIndex);
+        var firstSetInterval=setInterval("firstInterval()",40)
+        function firstInterval()
+        { 
+          firstIntervalPoint++;
+           nextPoint=topPicturePoint-1;
+           if(nextPoint==-1){nextPoint=2;}
+            
+          if(firstIntervalPoint>50)
+          {     
+            myGallerySlide[topPicturePoint].style.opacity=1-(firstIntervalPoint-50)*0.02;
+            myGallerySlide[nextPoint].style.opacity=(firstIntervalPoint-50)*0.02;
+          }
+          if(firstIntervalPoint==100)
+          {
+            myGallerySlide[topPicturePoint].style.zIndex=0;
+          
+            for(myGallerySlidePoint=0;myGallerySlidePoint<3;myGallerySlidePoint++)
+            {              
+              myGallerySlide[myGallerySlidePoint].style.zIndex++;
+            }
+          
+            firstIntervalPoint=0;
+
+            topPicturePoint--;
+
+            if(topPicturePoint==-1){topPicturePoint=2;}
+          }
+          
+        }
+     </SCRIPT>
+
+</body>
+
+</html>

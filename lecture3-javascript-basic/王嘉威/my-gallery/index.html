@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>William's Blog</title>
+    <meta charset='utf-8'/>
+    <link rel="stylesheet" href="css/gallery.css" type="text/css">
+    <link rel="stylesheet" href="css/meddon-font.css" type="text/css">
+
+    <script type="text/javascript">
+    function startTime()
+    {
+      var today=new Date()
+      var h=today.getHours()
+      var m=today.getMinutes()
+      var s=today.getSeconds()// add a zero in front of numbers<10
+      m=checkTime(m)
+      s=checkTime(s)
+      document.getElementById('txt').innerHTML=h+":"+m+":"+s
+      t=setTimeout('startTime()',500)
+    }
+
+    function checkTime(i)
+    {
+      if (i<10)
+      {i="0" + i}
+    return i
+    }
+    function send()
+    {
+        var txtarea = document.getElementById("xinxi");
+		    var _txt = document.createTextNode(txtarea.value);
+        var text = document.createElement("li");
+        var comment = document.getElementById("comments-list");
+        var num = document.getElementById("ss").innerHTML;
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        if (_txt.length >= 4) {
+          text.appendChild(_txt);
+          text.innerHTML +="                " + "Time:  " + h + ":" + m + ":" + s + "   By SB NO." + (num + 1);
+          text.style.listStyle = "none";
+          comment.appendChild(text);
+		      num++;
+          document.getElementById("ss").innerHTML = num;
+          txtarea.value = "";
+        } else {
+            alert("亲，再说多几个字吧。。。")
+        }
+    }
+    </script>
+</head>
+
+<body onload="startTime()">
+    <div id="wrapper">
+
+        <!-- 网页头部，包括导航栏和大标题 -->
+         <header id='header'>
+            <h1>William's Blog</h1>
+            <nav>
+                <span class='text'>文章</span>
+                <span class='text'>相册</span>
+                <a href="http://weibo.com/u/1899517750/home?leftnav=1&wvr=5" target="_blank" class="pas">
+                    <span class='text'>关于</span>
+                </a>
+            </nav>
+         </header>
+         <!-- 相册 -->
+         <div id="gallery">
+            <div class="gallery-heading">
+                <div class="gallery-icon">
+                    <!-- todo -->
+                    <img src="img/gallery-icon.png" alt="gallery-icon">
+                </div>
+                <h2>MY GALLERY</h2>
+                 <p id="txt" class="time"></p>
+            </div>
+            <div class="gallery-image">
+                    <img src="img/slide-1.jpg" alt="slide-1">
+                    <img class="m1" src="img/slide-2.jpg" alt="slide-1">
+                    <img class="m2" src="img/slide-3.jpg" alt="slide-1">
+            </div>
+         </div>
+
+         <!-- 发布评论 -->
+         <div id="comment">
+            <div class='comment-textarea'>
+                <img src="img/avatar-default.png" alt="avatar-default">
+                <textarea id="xinxi" class="comment" placeholder="说点什么吧~~"></textarea>
+            </div>
+            <button class="comment-submit" style="cursor:pointer" onmouseover="this.innerHTML='发布'" onmouseout="this.innerHTML='干嘛移开'" onclick="send()">点此发布</button>
+         </div>
+         <br/>
+         <br/>
+         <!--评论列表-->
+         <div id="comments-list">
+            <div class='comments-count'>
+                共 <span id="ss">0</span> 条评论
+            </div>
+            <br/>
+            <div class="comment-item">
+                    <p>
+                        关关雎鸠，在河之洲。窈窕淑女，君子好逑。参差荇菜，左右流之。窈窕淑女，寤寐求之。 求之不得，寤寐思服。悠哉悠哉，辗转反侧。参差荇菜，左右采之。窈窕淑女，琴瑟友之。 参差荇菜，左右芼之。窈窕淑女，钟鼓乐之。
+                    </p>
+            </div>
+         </div>
+     </div>
+</body>
+
+</html>

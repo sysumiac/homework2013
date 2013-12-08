@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>William's Blog</title>
+    <meta charset='utf-8'/>
+    <link rel="stylesheet" href="css/gallery.css" type="text/css">
+    <link rel="stylesheet" href="css/meddon-font.css" type="text/css">
+</head>
+
+<body id='main'>
+    <div id="wrapper">
+
+        <!-- 网页头部，包括导航栏和大标题 -->
+         <header id='header'>
+            <h1>William's Blog</h1>
+            <nav>
+                <span class='text'>文章</span>
+                <span class='text'>相册</span>
+                <a href="http://weibo.com/u/1899517750/home?leftnav=1&wvr=5" target="_blank" class="pas">
+                    <span class='text'>关于</span>
+                </a>
+            </nav>
+         </header>
+          <!-- 恶搞 -->
+         <div id="welcome">
+                <p>Please wait <span id ="num">6</span> seconds......</p>
+         </div>
+         <!-- 相册 -->
+         <div id="gallery">
+            <div class="gallery-heading">
+                <div class="gallery-icon">
+                    <!-- todo -->
+                    <img src="img/gallery-icon.png" alt="gallery-icon">
+                </div>
+                <h2>MY GALLERY</h2>
+                <p id="txt" class="time"></p>
+            </div>
+            <div class="gallery-image" id="tu">
+                    <img id="m0" src="img/slide-1.jpg" alt="slide-1">
+                    <img id="m1" src="img/slide-2.jpg" alt="slide-1">
+                    <img id="m2" src="img/slide-3.jpg" alt="slide-1">
+                    <img id="m3" src="img/sb.png" alt="slide-1">
+            </div>
+         </div>
+
+         <!-- 发布评论 -->
+         <div id="comment">
+            <div class='comment-textarea'>
+                <img src="img/avatar-default.png" alt="avatar-default">
+                <textarea id="xinxi" class="comment" placeholder="说点什么吧~~"></textarea>
+            </div>
+            <button class="comment-submit" style="cursor:pointer" onmouseover="this.innerHTML='你是SB'" onmouseout="this.innerHTML='干嘛移开'" onclick="send()">点此发布</button>
+         </div>
+         <br/>
+         <br/>
+         <!--评论列表-->
+         <div id="comments-list">
+            <div class='comments-count'>
+                共 <span id="ss">0</span> 条评论
+            </div>
+            <br/>
+            <div class="comment-item">
+                    <p>
+                        关关雎鸠，在河之洲。窈窕淑女，君子好逑。参差荇菜，左右流之。窈窕淑女，寤寐求之。 求之不得，寤寐思服。悠哉悠哉，辗转反侧。参差荇菜，左右采之。窈窕淑女，琴瑟友之。 参差荇菜，左右芼之。窈窕淑女，钟鼓乐之。
+                    </p>
+            </div>
+         </div>
+     </div>
+</body>
+<script type="text/javascript" src ="js/myjs.js">
+</script>
+</html>
