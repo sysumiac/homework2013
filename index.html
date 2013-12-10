@@ -7,11 +7,32 @@
     <meta name="description" content="MIAC  : 2013年培训作业展示" />
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/meddon-font.css">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/tween-scroller.min.css">
+    <script src="javascripts/jquery-1.10.1.min.js"></script>
+    <script src="javascripts/tween-scroller.min.js"></script>
     <title>MIAC </title>
+    <style>
+    .wrapper {
+      width: 100%;
+    }
+    body {
+      position: fixed!important;
+      width: 100%;
+      height: 100%;
+    }
+    #wrapper .scrollbar {
+      width: 15px!important;
+      cursor: pointer;
+      border-radius: 30px;
+      border: none;
+      box-shadow: 0 0 15px #000;
+    }
+    </style>
   </head>
 
-  <body>
+  <body class="scroll-outer" id="wrapper">
 
+  <div class="wrapper scroll-inner">
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
@@ -151,5 +172,9 @@
 
     
 
+  </div>
   </body>
+  <script>
+  $('body').scroll()
+  </script>
 </html>
