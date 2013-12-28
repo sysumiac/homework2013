@@ -1,0 +1,303 @@
+* {
+    font-family: 'Microsoft YaHei','Helvetica Neue', Helvetica, Arial, Verdana,  "Hiragino Sans GB", STHeiti, sans-serif, '汉仪瘦金书繁';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* todo */
+    background-image: url('../img/onepiece.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+h1, h2 {
+    /* todo */
+    text-align: center;
+}
+
+/* 最外层容器样式 */
+#wrapper {
+    width: 1000px;
+    background-repeat: repeat;
+    margin: 0 auto;
+    background-color: rgba(230, 218, 218, 0.7);
+}
+
+
+
+/* 头部header的样式 */
+#header h1 {
+    /* todo */
+    font-family: 'Meddon';
+    font-weight: lighter;
+    font-size: 93px;
+    color: #888;
+    font-style: normal;
+    src: local('Meddon'), url('meddon-font.woff') format('woff');
+    text-align: center;
+}
+#header nav {
+    text-align: center; 
+}
+#header nav span{
+    margin-right: 30px;
+    margin-left: 30px;
+    font-family: "汉仪瘦金书繁";
+    font-size: 50px;
+}
+#header nav ul {
+    border-bottom: dotted 1px #ddd;
+}
+
+#header a{
+    /* todo */
+    color: #666;
+    text-decoration: none;
+}
+
+/*欢迎样式*/
+#welcome {
+   text-align: center;
+   margin-top: 10px;
+}
+
+#num{
+   color: red;
+}
+
+/* 相册样式 */
+#gallery {
+    /* todo */
+    background-color: rgba(230, 218, 218, 0.7);
+    margin: 2cm 2cm 2cm 2cm;
+    box-shadow: 0 2px 5px #303030;
+    height: 700px;
+}
+
+.gallery-heading h2 {
+    font-weight: lighter;
+    font-family: "Chiller";
+    font-size: 38px;
+    color: black;
+    background-color: rgba(230, 218, 218, 0.7);
+}
+
+.gallery-heading .gallery-icon {
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+}
+
+.gallery-heading .gallery-icon img {
+    /* todo */
+    height: 60px;
+    width: 60px;
+}
+
+.gallery-heading p.time {
+    /* todo */
+    text-align: center;
+    color: #656565;
+    font-weight: lighter;
+    height: 20px;
+    font-family: "Blackadder ITC";
+    font-size: 20px;
+}
+
+.gallery-image {
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.gallery-image2 {
+   text-align: center;
+   position: relative;
+   display: block;
+}
+
+.disappear {
+    display: none;
+}
+
+#m0 {
+    border-style: double;
+    position: absolute;
+    z-index: 1;
+    right: 105px;
+    top: 15px;
+}
+
+#m1 {
+    border-style: double;
+    position: absolute;
+    z-index: 1;
+    right: 105px;
+    top: 15px;
+}
+
+#m2 {
+    border-style: double;
+    position: absolute;
+    z-index: 1;
+    right: 105px;
+    top: 15px;
+}
+
+#m3 {
+    border-style: double;
+    position: absolute;
+    z-index: 2;
+    right: 105px;
+    top:15px;
+}
+
+.select {
+    position: relative;
+    left: 650px;
+    top: 380px;
+    z-index: 3;
+}
+
+.circle1 {
+   border-radius: 50%;
+   height: 20px;
+   width: 20px;
+   background-color: black;
+   opacity: 0.5;
+   display: inline-block;
+}
+
+.circle2 {
+   border-radius: 50%;
+   height: 20px;
+   width: 20px;
+   background-color: black;
+   opacity: 0.5;
+   display: inline-block;
+}
+
+.circle3 {
+   border-radius: 50%;
+   height: 20px;
+   width: 20px;
+   background-color: black;
+   opacity: 0.5;
+   display: inline-block;
+}
+
+.circle1:hover {
+    cursor:pointer;
+}
+
+.circle2:hover {
+    cursor:pointer;
+}
+
+.circle3:hover {
+    cursor:pointer;
+}
+
+/*评论输入框*/
+#comment {
+    text-align: center;
+    margin: 0 2cm 0 2cm;
+}
+
+.comment-textarea img {
+    border-radius: 3px;
+    position: relative;
+    bottom: 22px;
+}
+
+.comment-textarea textarea.comment {
+    height: 70px;
+    width: 785px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #999;
+    border: 1px solid #bbb;
+    /* todo */
+    border-radius: 3px;
+}
+
+button.comment-submit {
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    font-family: '汉仪瘦金书繁';
+    font-weight: bold;
+    color: #555;
+    /* todo */
+    background-color: #e6e6e6;
+    border: 1px solid #ccc;
+    position: relative;
+    left: 380px;
+}
+
+
+
+/*评论列表*/
+.comments-count {
+    font-size: 13px;
+    color: #777;
+}
+
+/* todo */
+#comments-list {
+    margin: 0 2cm 0 2cm;
+    position: relative;
+    top: -40px;
+}
+.comment-item {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.comment-item p {
+    font-size: 23px;
+    color: #333;
+    font-family: "仿宋";
+    line-height: 1.5em;
+    position: relative;
+    left: 10px;
+}
+.comments-count span {
+    color: #d32;
+}
+
+#pupple {
+   border-radius: 50%;
+   height: 50px;
+   width: 50px;
+   opacity: 0.5;
+   border-style: outset;
+   position: absolute;
+   z-index: 3;
+}
+
+.pupple1 {
+   background-color: blue;
+   left: 100px;
+   top: 100px;
+}
+
+.pupple2 {
+   background-color: red;
+   left: 300px;
+   top: 1000px;
+}
+
+.pupple3 {
+   background-color: green;
+   left: 500px;
+   top: 700px;
+}
